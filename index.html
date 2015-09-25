@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Estimate Abalone Ages</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Estimate Abalone Ages">
+  <meta name="author" content="JW149J0103">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/deck.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Estimate Abalone Ages</h1>
+    <h2>A linear regression model based on vital statistics</h2>
+    <p>JW149J0103<br/>Submitted as part of the assessment for the Data Products course. Use arrow keys to navigate this presentation.</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>The Abalone Aging App</h3>
+
+<p>======================================</p>
+
+<ul>
+<li>If you skipper an abalone harvesting boat, you know how fragile the fisheries are. </li>
+<li>A big risk is getting the day&#39;s catch confiscated for taking young shells.</li>
+<li>Your experienced eye is paramount, but what if you had a bit of science on your side?</li>
+<li>The <em>Abalone Aging App</em> , which can run from your smartphone or tablet,  uses data from the Marine Research Laboratories - Taroona, Tasmania to give an estimate the age of a freshly harvested shell.</li>
+<li><p>The measurements are all non-invasive, enabling safe return if the specimen is too young.</p>
+
+<pre><code>*Please note, this application was developed as a programming exercise and CANNOT be used commercially! *
+</code></pre></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+<img height='300' src='assets/img/abalone-1.jpg' />
+</div>
+
+<h3>The measurements and observations</h3>
+
+<ul>
+<li>Sex - look at the underside: do you see testes (Male), Ovaries (Female) or nothing definite (Immature)? If unsure record immature.</li>
+<li>Length - with calipers, measure the longest axis if the shell (in mm)</li>
+<li>Diameter - with calipers, measure the greatest width of the shell (in mm)</li>
+<li>Height - with calipers, measure the distance from the flesh underneath to the top of the shell (in mm)</li>
+<li>Weigh the shell (in g)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+<img height='400' src='assets/img/appPage.png' />
+</div>
+
+<h3>The result</h3>
+
+<p>The app is available at <a href="https://jw149j.shinyapps.io/assess/">https://jw149j.shinyapps.io/assess/</a>. </p>
+
+<p>Enter the sex details using the radio button in the panel on the left.  </p>
+
+<p>Enter the measurements by shifting the sliders </p>
+
+<p>Read the estimated age of the shell at the bottom. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+<img height='350' src='assets/img/corr01.png' />
+</div>
+
+<h3>Appendix - Performance of the linear regression model.</h3>
+
+<ul>
+<li><p>The regression model was used to estimate the ages of ~ 1100 specimens with ages independently determined by ring count. None of these specimens were used in the construction of the model.</p></li>
+<li><p>The plot shows the relationship between the actual ages of the shells, and the estimate provided by the model.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='NA'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='NA'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='NA'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+   
+  </html>
