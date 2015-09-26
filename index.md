@@ -30,7 +30,8 @@ knit        : slidify::knit2slides
   
   
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- *Please note, this application was developed as a programming exercise and CANNOT be used commercially! *
+ *Please note, this application was developed as a programming   
+ exercise and CANNOT be used commercially! *
 
 --- .class #id transition:rotate
 
